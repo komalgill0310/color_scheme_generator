@@ -1,4 +1,4 @@
-<!-- Requirements -->
+**Requirements**
 
 1. Input type color, which lets user to choose color.
 2. An input with drop down, for the user to select the option.
@@ -6,7 +6,7 @@
 4. Display the fetched colors on the screen, vertically.
 5. Each color's hex values should display below the color itself.
 
-<!-- HTML Breakdown -->
+_HTML Breakdown_
 
 **Main Tag**
 
