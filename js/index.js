@@ -1,11 +1,11 @@
 const seedColor = document.getElementById("seed-color");
 const colorScheme = document.getElementById("color-scheme");
-let seedColorValue = seedColor.value;
+let seedColorValue = seedColor.value.slice(1);
 let colorSchemeValue = colorScheme.value;
 
 seedColor.addEventListener("input", (e) => {
   e.preventDefault();
-  seedColorValue = e.target.value.slice(1);
+  seedColorValue = e.target.value;
   return seedColorValue;
 });
 
