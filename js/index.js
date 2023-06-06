@@ -5,7 +5,7 @@ let colorSchemeValue = colorScheme.value;
 
 seedColor.addEventListener("input", (e) => {
   e.preventDefault();
-  seedColorValue = e.target.value;
+  seedColorValue = e.target.value.slice(1);
   return seedColorValue;
 });
 
