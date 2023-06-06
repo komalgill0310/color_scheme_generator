@@ -23,5 +23,9 @@ getColorScheme.addEventListener("click", () => {
     `https://www.thecolorapi.com/scheme?hex=${seedColorValue}&mode=${colorSchemeValue}`
   )
     .then((response) => response.json())
-    .then((data) => console.log(data));
+    .then((data) => {
+      for (let color of data.colors) {
+        console.log(color.hex.value);
+      }
+    });
 });
