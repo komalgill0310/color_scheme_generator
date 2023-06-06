@@ -8,8 +8,13 @@
   </head>
   <body>
     <header class="header">
-      <input type="color" name="seed-color" id="seed-color" />
-      <select id="colors">
+      <input
+        type="color"
+        name="seed-color"
+        id="seed-color"
+        data-color-scheme="color-scheme"
+      />
+      <select id="color-scheme" data-color-scheme="color-scheme">
         <option value="monochrome">Monochrome</option>
         <option value="monochrome-dark">Monochrome-dark</option>
         <option value="monochrome-light">Monochrome-light</option>
@@ -18,7 +23,7 @@
         <option value="analogic-complement">Analogic-complement</option>
         <option value="triad">Triad</option>
       </select>
-      <button class="get-color-scheme">Get color scheme</button>
+      <button id="get-color-scheme">Get color scheme</button>
     </header>
     <main class="main-section">
       <!-- colors will render here -->

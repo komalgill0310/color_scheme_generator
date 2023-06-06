@@ -39,3 +39,15 @@ _BREAKDOWN_
 
 1. Get the input seed color value, when user change the color using their mouse. ✅
 2. Log it on the console. ✅
+
+3. Get the option's value when users change the value in select tag.
+4. Log it on the console.
+
+**Parameters needed to make Api call from Colors Api**
+
+1. Get Hex color value from the input type color, when user changes the color.✅
+2. Get Select's option tag value, when user changes the value.✅
+
+**How to make an API call**
+
+1. Substitute the hex color and option's value in the api, and then click on the _Get Color Scheme_ button to make the GET request from the API.✅
