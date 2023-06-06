@@ -22,3 +22,20 @@ _HTML Breakdown_
 **Footer Tage**
 
 1. The hex value corresding to the color itself.
+
+_JavaScript_
+
+**High Level Overview:**
+
+1. Make an api call to the colors api
+2. Get the colors from the api
+3. Store them in an element
+4. render them on the page.
+5. Get the corresponding color's hex color.
+6. Render it on the page.
+
+_BREAKDOWN_
+**First Task:**
+
+1. Get the input seed color value, when user change the color using their mouse. ✅
+2. Log it on the console. ✅
