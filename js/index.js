@@ -1,18 +1,15 @@
+import { getInputValue, getDisplayColorsHtml } from "/js/utils.js";
+
 const seedColor = document.getElementById("seed-color");
 const colorScheme = document.getElementById("color-scheme");
-let seedColorValue = seedColor.value.slice(1);
+let seedColorValue = seedColor.value;
 let colorSchemeValue = colorScheme.value;
 
 seedColor.addEventListener("input", (e) => {
-  e.preventDefault();
-  seedColorValue = e.target.value.slice(1);
-  return seedColorValue;
+  seedColorValue = getInputValue(e);
 });
-
 colorScheme.addEventListener("input", (e) => {
-  e.preventDefault();
-  colorSchemeValue = e.target.value;
-  return colorSchemeValue;
+  colorSchemeValue = getInputValue(e);
 });
 
 const getColorScheme = document.getElementById("get-color-scheme");
@@ -20,12 +17,13 @@ const getColorScheme = document.getElementById("get-color-scheme");
 getColorScheme.addEventListener("click", () => {
   console.log(seedColorValue, colorSchemeValue);
   fetch(
-    `https://www.thecolorapi.com/scheme?hex=${seedColorValue}&mode=${colorSchemeValue}`
+    `https://www.thecolorapi.com/scheme?hex=${seedColorValue.slice(
+      1
+    )}&mode=${colorSchemeValue}`
   )
     .then((response) => response.json())
     .then((data) => {
-      for (let color of data.colors) {
-        console.log(color.hex.value);
-      }
+      document.querySelector(".main-section").innerHTML =
+        getDisplayColorsHtml(data);
     });
 });

@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.color {
+  display: flex;
+  margin-bottom: 13px;
+  flex-direction: column;
+  width: 100%;
+}
+
+.background-color {
+  min-width: 110px;
+  height: 100vh;
+  padding: 51px;
+}
+
+.main-section {
+  border: 2px solid green;
+  display: flex;
+}
+
+.color-info {
+  text-align: center;
+}

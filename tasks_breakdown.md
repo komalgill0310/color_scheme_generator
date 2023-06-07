@@ -51,3 +51,14 @@ _BREAKDOWN_
 **How to make an API call**
 
 1. Substitute the hex color and option's value in the api, and then click on the _Get Color Scheme_ button to make the GET request from the API.✅
+
+_REFACTOR_
+
+1. How to combine event listener for the input event.✅
+2. How to have the input's values returned at the global level.✅
+
+<!-- Finished Tasks -->
+
+1. colors are getting rendered. ✅
+2. rendered their hex values and name of the color. ✅
+3. did rough layout for the elements.✅
