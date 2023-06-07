@@ -62,3 +62,10 @@ _REFACTOR_
 1. colors are getting rendered. ✅
 2. rendered their hex values and name of the color. ✅
 3. did rough layout for the elements.✅
+
+<!-- Next Task -->
+
+**Question: How to render the colors by default?**
+
+1. Make the fetch request default.
+2. Then all the fetch request will be done by clicking on the button.
