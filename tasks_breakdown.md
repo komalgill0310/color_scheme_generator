@@ -65,7 +65,9 @@ _REFACTOR_
 
 <!-- Next Task -->
 
-**Question: How to render the colors by default?**
+**Question: How to render the colors by default?**✅
 
 1. Make the fetch request default.
 2. Then all the fetch request will be done by clicking on the button.
+
+**Make the site responsive.**
