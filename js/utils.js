@@ -19,4 +19,8 @@ function generateColorDisplayHTML(data) {
     .join("");
 }
 
-export { getInputValue, generateColorDisplayHTML };
+function copyToClipboard(text) {
+  navigator.clipboard.writeText(text);
+}
+
+export { getInputValue, generateColorDisplayHTML, copyToClipboard };

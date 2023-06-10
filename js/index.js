@@ -1,4 +1,8 @@
-import { getInputValue, generateColorDisplayHTML } from "/js/utils.js";
+import {
+  getInputValue,
+  generateColorDisplayHTML,
+  copyToClipboard,
+} from "/js/utils.js";
 
 const seedColor = document.querySelector(".seed-color");
 const colorScheme = document.querySelector(".color-scheme");
@@ -27,28 +31,36 @@ function fetchAndDisplayColors() {
     .then((data) => {
       document.querySelector(".main-section").innerHTML =
         generateColorDisplayHTML(data);
+      handleColorHexClick();
     });
 }
 
 fetchAndDisplayColors();
 
-// How to copy text to clipboard?
+// Is there a better way to perform the handleColorHexClick?
 
-// handleHexClick();
+function handleColorHexClick() {
+  const colorsHex = document.querySelectorAll(".color-hex");
+  colorsHex.forEach((hexColor) => {
+    hexColor.addEventListener("click", (e) => {
+      const defaultText = e.target.textContent;
+      copyToClipboard(e.target.textContent);
+      setTextToCopied(e.target);
+      setTextToOriginal(e.target, defaultText);
+    });
+  });
+}
 
-// function handleHexClick() {
-//   const colorHex = document.querySelector(".color-hex");
-//   colorHex.addEventListener("click", () => {
-//     console.log("color hex was clicked!");
-//   });
-// }
+function setTextToCopied(htmlElement) {
+  htmlElement.textContent = "Copied!";
+}
 
-// When I call the handleHexClick(), I get the below error:
-// Uncaught TypeError: Cannot read properties of null (reading 'addEventListener')
-// at handleHexClick
-
-// My understanding is that the event will only happen when I click on the hex value, and the element does exist on the DOM.
+function setTextToOriginal(htmlElement, originalValue) {
+  setTimeout(() => {
+    htmlElement.textContent = originalValue;
+  }, 1000);
+}
 
 // Questions:
-// 1. Please explain why the error is occuring.
+// 1. Should I have define the function setTextToCopied, setTextToOriginal in the utils.js?
 // 2. How can I avoid Vertical scrolling, so the user does not have to scroll in order to view the color detail?
