@@ -31,3 +31,24 @@ function fetchAndDisplayColors() {
 }
 
 fetchAndDisplayColors();
+
+// How to copy text to clipboard?
+
+// handleHexClick();
+
+// function handleHexClick() {
+//   const colorHex = document.querySelector(".color-hex");
+//   colorHex.addEventListener("click", () => {
+//     console.log("color hex was clicked!");
+//   });
+// }
+
+// When I call the handleHexClick(), I get the below error:
+// Uncaught TypeError: Cannot read properties of null (reading 'addEventListener')
+// at handleHexClick
+
+// My understanding is that the event will only happen when I click on the hex value, and the element does exist on the DOM.
+
+// Questions:
+// 1. Please explain why the error is occuring.
+// 2. How can I avoid Vertical scrolling, so the user does not have to scroll in order to view the color detail?
