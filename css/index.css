@@ -8,6 +8,8 @@ body {
   display: flex;
   flex-direction: column;
   font-family: "Inter";
+  height: 100vh;
+  overflow-y: hidden;
 }
 
 /* ================
@@ -63,7 +65,7 @@ body {
 .main-section {
   display: grid;
   grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
-  height: 100vh;
+  height: 89vh;
 }
 
 .color {
