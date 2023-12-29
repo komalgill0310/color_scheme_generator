@@ -62,9 +62,9 @@ The project is structured as follows:
 
 - **index.html**: Contains the structure of the web page. 
 
-- **tasks_breakdown.md**: Breakdown of project tasks for organized developement. 
+- **tasks_breakdown.md**: Breakdown of project tasks for organized developement.
 
-## Project Structure
+## API Source
 
 For more information about the API used in this project, visit [thecolorapi](https://www.thecolorapi.com/).
 
