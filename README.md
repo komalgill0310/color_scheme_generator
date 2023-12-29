@@ -2,7 +2,7 @@
 
 # Overview
 
-Welcome to the "Color Scheme Generator" – a project built to practice pulling data from an API. In this interactive platform, users can choose a base color and its mode, then click the "Get Color Scheme" button to generate a color palette for the selected color.
+Welcome to the "Color Scheme Generator" – a project built to practice pulling data from an API. In this interactive platform, users can choose a base color and its mode, then click the **"Get Color Scheme"** button to generate a color palette for the selected color.
 
 # Website
 
