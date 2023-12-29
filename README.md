@@ -1,4 +1,4 @@
-# **Restaurant Ordering Website**
+# **Color Scheme Generator**
 
 # Overview
 
